@@ -1,3 +1,4 @@
+'use server'
 import { OptionalId, Document } from "mongodb";
 import mongoclient from "../lib/mongodb";
 

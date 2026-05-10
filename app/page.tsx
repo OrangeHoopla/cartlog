@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import { uploadser } from "./rust_image_processing";
-import { SubmitEventHandler } from "react";
+import { uploadRecieptForm } from "./components/reciepts";
 
 export default function Home() {
 
@@ -12,6 +12,8 @@ export default function Home() {
     const formData = new FormData();
     formData.append('file', file);
     const test = await uploadser(formData);
+
+    var res = uploadRecieptForm(test);
     console.log(test);
   }
 
