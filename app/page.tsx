@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import { uploadser } from "./rust_image_processing";
-import { uploadRecieptForm } from "./components/reciepts";
+import { uploadRecieptForm } from "../components/reciepts";
 
 export default function Home() {
 
