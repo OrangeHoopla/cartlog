@@ -15,3 +15,14 @@ export async function uploadRecieptForm(req: OptionalId<Document>) {
   return result;
 
 }
+
+export async function getAllEntries() {
+  const client = await mongoclient;
+  const db = client.db("cartlog");
+  const result = await db
+    .collection("reciepts")
+    .find()
+    .toArray()
+    
+  return result;
+}

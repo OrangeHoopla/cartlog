@@ -1,6 +1,7 @@
 'use server'
 
-export async function uploadser(e: FormData) {
+export async function uploadser(e: FormData)
+{
     
     const res = await fetch('http://127.0.0.1:8000/api/upload', {
       method: 'POST',
@@ -11,5 +12,5 @@ export async function uploadser(e: FormData) {
     console.log(data);
   
   return data;
-  }
+}
 

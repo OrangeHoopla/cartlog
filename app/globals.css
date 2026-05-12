@@ -49,8 +49,8 @@
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background-color: #f5f4ef;
+  --foreground: #171717;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -81,10 +81,12 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --color-background-hover: oklch(0.9364 0.0068 97.36)
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
+  --color-background-hover: oklch(0.9364 0.0068 97.36)
+  --background-color: #f5f4ef;
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
@@ -115,6 +117,14 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+}
+body {
+  background-color: var(--background-color);
+  background-size: var(--background-size);
+  background-image: var(--background-image);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-image: var(--background-image); */
 }
 
 @layer base {
